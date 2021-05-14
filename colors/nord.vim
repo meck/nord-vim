@@ -618,6 +618,18 @@ hi! link NERDTreeHelp Comment
 hi! link CtrlPMatch Keyword
 hi! link CtrlPBufferHid Normal
 
+" Telescope
+" >  nvim-telescope/telescope.nvim
+call s:hi("TelescopeSelection", s:nord9_gui, "", "", "", s:bold, "")
+call s:hi("TelescopeSelectionCaret", s:nord7_gui, "", "", "", s:bold, "")
+call s:hi("TelescopeMultiSelection", s:nord13_gui, "", "", "", s:bold, "")
+call s:hi("TelescopeNormal", "", s:nord1_gui, "", "", "", "")
+call s:hi("TelescopeBorder", s:nord4_gui, s:nord1_gui, "", "", "", "")
+call s:hi("TelescopePromptBorder", s:nord4_gui, s:nord1_gui, "", "", "", "")
+call s:hi("TelescopePreviewBorder", s:nord4_gui, s:nord1_gui, "", "", "", "")
+call s:hi("TelescopeMatching", s:nord7_gui, "", "", "", "", "")
+call s:hi("TelescopePromptPrefix", s:nord7_gui, "", "", "", s:bold, "")
+
 " vim-clap
 " > liuchengxu/vim-clap
 call s:hi("ClapDir", s:nord4_gui, "", "", "", "", "")
@@ -708,6 +720,19 @@ if has("nvim")
   hi! link TSVariable Variable
   hi! link TSVariableBuiltin Keyword
 endif
+
+" Pandoc
+" > vim-pandoc/vim-pandoc-syntax
+call s:hi("pandocAtxHeader", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+call s:hi("pandocPipeTableDelims", s:nord3_gui, "", s:nord3_term, "", "", "")
+call s:hi("pandocPipeTableHeader", s:nord3_gui, "", s:nord3_term, "", "", "")
+call s:hi("pandocTableHeaderWord", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("pandocCiteAnchor", s:nord12_gui, "", s:nord12_term, "", "", "")
+call s:hi("pandocCiteKey", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("pandocReferenceDefinition", s:nord6_gui, "", s:nord6_term, "", "", "")
+call s:hi("pandocFootnoteDef", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("pandocDefinitionBlockTerm", s:nord12_gui, "", s:nord12_term, "", s:bold, "")
+call s:hi("pandocDefinitionBlock", s:nord9_gui, "", s:nord9_term, "", s:italic, "")
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
