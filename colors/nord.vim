@@ -582,6 +582,7 @@ call s:hi("LspDiagnosticsUnderlineWarning" , s:nord13_gui, "", s:nord13_term, ""
 call s:hi("LspDiagnosticsUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
 call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
 call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
+call s:hi("LspCodeLens" , s:nord8_gui, "", s:nord9_term, "", s:italic, "")
 
 " GitGutter
 " > airblade/vim-gitgutter
